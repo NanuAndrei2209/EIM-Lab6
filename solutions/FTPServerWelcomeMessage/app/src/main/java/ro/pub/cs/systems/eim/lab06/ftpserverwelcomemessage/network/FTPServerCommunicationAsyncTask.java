@@ -66,12 +66,12 @@ public class FTPServerCommunicationAsyncTask extends AsyncTask<String, String, V
 
     @Override
     protected void onPreExecute() {
-        welcomeMessageTextView.setText("");
+        this.welcomeMessageTextView.setText("");
     }
 
     @Override
-    protected void onProgressUpdate(String... progres) {
-        welcomeMessageTextView.append(progres[0] + "\n");
+    protected void onProgressUpdate(String... progress) {
+        this.welcomeMessageTextView.append(progress[0] + "\n");
     }
 
     @Override
